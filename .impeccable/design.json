@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-18T00:00:00-03:00",
+  "title": "Design System: Clínica Basile",
+  "extensions": {
+    "colorMeta": {
+      "blue-deep": { "role": "primary", "displayName": "Azul Basile profundo", "canonical": "#123e50" },
+      "blue-light": { "role": "primary", "displayName": "Azul Basile claro", "canonical": "#1b5062" },
+      "cream": { "role": "neutral", "displayName": "Creme de fundo", "canonical": "#f9f5ef" },
+      "sand": { "role": "secondary", "displayName": "Areia acolhedora", "canonical": "#e7d8c5" },
+      "gold": { "role": "secondary", "displayName": "Dourado discreto", "canonical": "#a17a44" },
+      "ink": { "role": "neutral", "displayName": "Azul-tinta", "canonical": "#193f4f" },
+      "muted": { "role": "neutral", "displayName": "Azul acinzentado", "canonical": "#516872" },
+      "line": { "role": "neutral", "displayName": "Linha mineral", "canonical": "#cfcabe" },
+      "clinic-mist": { "role": "neutral", "displayName": "Névoa clínica", "canonical": "#e7edea" },
+      "form-surface": { "role": "neutral", "displayName": "Superfície de formulário", "canonical": "#f0e9df" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Headline da primeira viewport." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos editoriais de seção." },
+      "title": { "displayName": "Title", "purpose": "Títulos de componentes e etapas." },
+      "body": { "displayName": "Body", "purpose": "Leitura corrente e explicações." },
+      "label": { "displayName": "Label", "purpose": "Credenciais, legendas e metadados." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "Entrada do hero e transformações espaciais." },
+      { "name": "state-color", "value": "200ms", "purpose": "Mudanças de cor e fundo em controles." },
+      { "name": "button-lift", "value": "250ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Deslocamento vertical de 2px no hover dos botões." },
+      { "name": "gallery-zoom", "value": "450ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Zoom sutil de 1.035 nas miniaturas." },
+      { "name": "hero-copy-enter", "value": "700ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Entrada de opacidade e 18px do texto em telas acima de 700px." },
+      { "name": "hero-image-enter", "value": "900ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Revelação por clip-path e opacidade do retrato em telas acima de 700px." }
+    ],
+    "breakpoints": [
+      { "name": "wide-adjust", "value": "1100px" },
+      { "name": "tablet-adjust", "value": "800px" },
+      { "name": "mobile-stack", "value": "700px" },
+      { "name": "compact-mobile", "value": "370px" }
+    ],
+    "narrative": {
+      "northStar": "A conversa esclarecida",
+      "thesis": "A decisão começa em uma conversa esclarecida.",
+      "storyOrder": ["médico", "formação", "procedimentos", "estrutura", "jornada", "contato", "FAQ", "recursos", "fecho"],
+      "rules": [
+        "Use dourado com raridade, em palavras, linhas e foco.",
+        "Mantenha superfícies planas; profundidade vem de tom, linha, recorte e espaço.",
+        "Use apenas fotos reais e dados verificados da Clínica Basile.",
+        "Reserve decisões clínicas à consulta individual."
+      ],
+      "reuseBoundary": "Este sistema pertence ao projeto Basile e orienta sua manutenção. O molde genérico vive separado; identidade, ativos, contatos e credenciais Basile não são portáveis."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA azul profundo, quase reto, com seta linear e elevação de 2px no hover.",
+      "html": "<a class=\"button button-blue\" href=\"#conversa\">Falar com a equipe <span class=\"arrow\" aria-hidden=\"true\"></span></a>",
+      "css": ".button{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;border:1px solid transparent;border-radius:2px;min-height:58px;padding:16px 24px;font:600 15px/1.5 Manrope,sans-serif}.button-blue{background:#123e50;color:#f9f5ef}.button:hover{transform:translateY(-2px)}"
+    },
+    {
+      "name": "Topic Choice",
+      "kind": "input",
+      "refersTo": "topic-unselected",
+      "description": "Bloco de seleção do formulário; troca integralmente de creme para azul quando marcado.",
+      "html": "<label class=\"topic-choice\"><input type=\"radio\" name=\"topic\"><span>Primeira consulta</span><span class=\"radio-mark\" aria-hidden=\"true\"></span></label>",
+      "css": ".topic-choice{display:flex;justify-content:space-between;align-items:center;padding:15px 17px;border:1px solid #b9bbae;background:#faf7f1;min-height:60px}.topic-choice:has(:checked){background:#123e50;border-color:#123e50;color:#f9f5ef}.topic-choice:has(:focus-visible){outline:3px solid #a17a44;outline-offset:3px}"
+    },
+    {
+      "name": "Editorial Text Link",
+      "kind": "custom",
+      "description": "Link com linha dourada e seta horizontal usado para progressão narrativa.",
+      "html": "<a class=\"text-link\" href=\"#conversa\">Começar uma conversa <span class=\"arrow\" aria-hidden=\"true\"></span></a>",
+      "css": ".text-link{display:inline-flex;align-items:center;gap:24px;padding-block:10px;border-bottom:1px solid #a17a44;font-size:15px}.text-link:hover{color:#a17a44}"
+    }
+  ]
+}
