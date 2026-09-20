@@ -1,6 +1,7 @@
 import { site } from './data/site.js';
 import { initializeContact } from './contact.js';
 import { initializeGallery } from './gallery.js';
+import { initializeVideos } from './videos.js';
 
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
@@ -24,3 +25,4 @@ skipLink?.addEventListener('click', () => {
 content?.addEventListener('blur', () => content.removeAttribute('tabindex'));
 initializeContact();
 initializeGallery();
+initializeVideos();

@@ -2,20 +2,25 @@
 name: "Clínica Basile — proposta de modernização"
 description: "Uma experiência editorial clínica em que a decisão começa em uma conversa esclarecida."
 colors:
-  blue-deep: "#123e50"
-  blue-light: "#1b5062"
-  cream: "#f9f5ef"
-  sand: "#e7d8c5"
-  gold: "#a17a44"
-  ink: "#193f4f"
-  muted: "#516872"
-  line: "#cfcabe"
-  clinic-mist: "#e7edea"
-  form-surface: "#f0e9df"
+  brand: "#3971ad"
+  brand-light: "#3e7ec2"
+  paper: "#ffffff"
+  surface: "#f4f4f4"
+  accent: "#337ab7"
+  ink: "#202020"
+  muted: "#626262"
+  line: "#d7dce1"
+  clinic-surface: "#f4f4f4"
+  form-surface: "#fafafa"
+  brand-dark: "#1b4784"
+  field-border: "#89939d"
+  divider-strong: "#c8cdd2"
+  gallery-backdrop: "#152c48e6"
+  play-shadow: "#00000026"
 typography:
   display:
     fontFamily: "Urbanist, sans-serif"
-    fontSize: "clamp(58px, 6.05vw, 88px)"
+    fontSize: "clamp(58px, 5.55vw, 80px)"
     fontWeight: 400
     lineHeight: 1.07
     letterSpacing: "-0.035em"
@@ -55,28 +60,28 @@ spacing:
   control-y: "16px"
 components:
   button-primary:
-    backgroundColor: "{colors.blue-deep}"
-    textColor: "{colors.cream}"
+    backgroundColor: "{colors.brand}"
+    textColor: "{colors.paper}"
     rounded: "{rounded.subtle}"
     padding: "16px 24px"
     height: "58px"
   button-primary-hover:
-    backgroundColor: "#21586e"
+    backgroundColor: "#1b4784"
   button-light:
-    backgroundColor: "{colors.cream}"
-    textColor: "{colors.blue-deep}"
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.brand}"
     rounded: "{rounded.subtle}"
     padding: "16px 24px"
     height: "58px"
   topic-unselected:
-    backgroundColor: "#faf7f1"
+    backgroundColor: "#ffffff"
     textColor: "{colors.ink}"
     rounded: "{rounded.square}"
     padding: "15px 17px"
     height: "60px"
   topic-selected:
-    backgroundColor: "{colors.blue-deep}"
-    textColor: "{colors.cream}"
+    backgroundColor: "{colors.brand}"
+    textColor: "{colors.paper}"
     rounded: "{rounded.square}"
     padding: "15px 17px"
     height: "60px"
@@ -90,7 +95,7 @@ components:
 
 O sistema transmite autoridade médica sem transformar a página em vitrine de resultados. A experiência começa pelo médico e por sua formação, apresenta procedimentos e estrutura, explica a jornada de atendimento e conduz a uma conversa consciente. O tom visual é editorial, sóbrio e acolhedor: grandes títulos, espaço generoso, linhas finas e fotografias reais organizam a leitura.
 
-A primeira viewport é a expressão concentrada dessa direção: headline à esquerda, retrato oficial à direita, CTA para conversa e CRM/RQE visíveis. O azul profundo estabelece confiança, o creme reduz a frieza institucional, o dourado marca ênfases pontuais e o sand cria passagens mais humanas entre blocos.
+A primeira viewport é a expressão concentrada dessa direção: headline à esquerda, retrato oficial à direita, CTA para conversa e CRM/RQE visíveis. Os azuis oficiais #3971AD e #3E7EC2 conectam a composição à marca Basile. Branco e cinzas neutros separam os blocos; bege, areia e dourado não fazem parte desta identidade.
 
 **Key Characteristics:**
 
@@ -103,28 +108,24 @@ Este `DESIGN.md` pertence ao projeto Basile e pode orientar sua manutenção e s
 
 ## Colors
 
-A paleta combina azul clínico profundo, neutros quentes e dourado contido. O contraste é usado para estruturar a narrativa; a cor de destaque permanece rara.
+A paleta vem do CSS oficial da Clínica Basile, revisitado em 20/09/2026. Cores de apoio foram neutralizadas e o texto secundário escurecido para preservar o contraste.
 
 ### Primary
 
-- **Azul Basile profundo** (`#123e50`): fundos de manifesto e fecho, CTA principal, estados selecionados, legendas fotográficas e navegação móvel ativa.
-- **Azul Basile claro** (`#1b5062`): variação registrada no sistema para extensões próximas do azul principal.
-
-### Secondary
-
-- **Dourado discreto** (`#a17a44`): palavras em itálico editorial, linhas de links, moldura do retrato e foco visível. Não funciona como grande superfície.
-- **Areia acolhedora** (`#e7d8c5`): credenciais, jornada e blocos de apoio; aquece o percurso entre áreas clínicas.
+- **Azul oficial** (`#3971ad`): CTA, manifesto, fecho, legenda do retrato e opção de vídeo selecionada. Branco sobre esse tom tem contraste de 5,07:1.
+- **Azul de títulos** (`#3e7ec2`): títulos grandes e credenciais. Contraste de 4,23:1 sobre branco; não usar em texto pequeno.
+- **Azul escuro** (`#1b4784`): hover e foco reforçado, também presente no site original.
+- **Azul de links** (`#337ab7`): links sobre branco. Em fundos cinza, usar `#3971ad`.
 
 ### Neutral
 
-- **Creme de fundo** (`#f9f5ef`): fundo dominante, controles claros e contraste sobre azul.
-- **Azul-tinta** (`#193f4f`): texto principal.
-- **Azul acinzentado** (`#516872`): texto secundário e metadados.
-- **Linha mineral** (`#cfcabe`): divisores e contornos de baixa ênfase.
-- **Névoa clínica** (`#e7edea`): galeria da estrutura e recursos.
-- **Superfície de formulário** (`#f0e9df`): contêiner da conversa.
+- **Branco** (`#ffffff`): base e texto sobre fundos azuis.
+- **Cinza de seção** (`#f4f4f4`): credenciais, clínica, jornada e blocos de apoio.
+- **Formulário** (`#fafafa`): superfície suave para a conversa.
+- **Texto** (`#202020`) e **texto secundário** (`#626262`): leitura sobre branco e cinza.
+- **Divisores** (`#d7dce1`) e **bordas de campos** (`#89939d`).
 
-**A regra do dourado raro.** Use dourado para orientar o olhar em palavras, linhas e foco; preserve azul e creme como vozes dominantes.
+**Regra de identidade.** A composição pode compartilhar o molde comercial; as cores pertencem à Basile. Não reintroduzir bege, areia ou dourado da Maraísa.
 
 ## Typography
 
@@ -135,72 +136,72 @@ A paleta combina azul clínico profundo, neutros quentes e dourado contido. O co
 
 ### Hierarchy
 
-- **Display** (400, `clamp(58px, 6.05vw, 88px)`, 1.07): headline da primeira viewport; em mobile usa `clamp(53px, 12.5vw, 74px)`.
+- **Display** (400, `clamp(58px, 5.55vw, 80px)`, 1.07): headline da primeira viewport; em mobile usa `clamp(53px, 12.5vw, 74px)`.
 - **Headline** (400, `clamp(40px, 4.2vw, 60px)`, 1.07): títulos de seção; em mobile, 41px como base contextual.
 - **Title** (400, 32px, 1.07): títulos de componentes e subtítulos; variações observadas entre 22px e 35px conforme função.
 - **Body** (400, 16px, 1.7): leitura corrente, com largura máxima global de 65ch e blocos editoriais geralmente mais estreitos.
 - **Label** (400, 12–14px, 1.7): CRM/RQE, legendas, progresso, metadados e rodapé.
 
-**A regra do peso sereno.** Hierarquia vem de escala, espaço e contraste; títulos permanecem em peso 400, com 500 reservado a itens que precisam de mais estrutura.
+**A regra do peso sereno.** Hierarquia vem de escala, espaço e contraste; títulos permanecem em peso 400, com 500 em itens de apoio e 600 na ênfase sobre as seções azuis.
 
 ## Layout
 
 O contêiner principal mede até 1240px e preserva margens laterais de 56px no desktop, 36px abaixo de 1100px, 24px abaixo de 800px e 20px abaixo de 700px. Seções principais usam 100px de respiro vertical no desktop e 68px no mobile.
 
-Desktop usa pares assimétricos: hero `1.08fr / 1fr`, médico `1fr / 1fr`, procedimentos `1.15fr / 1fr`, conversa `.83fr / 1.17fr` e fecho `1.05fr / 1fr`. A assimetria associa texto e evidência visual sem formar uma grade de cartões. A galeria clínica usa três colunas; recursos também usam três colunas.
+Desktop usa pares assimétricos: hero `1.08fr / 1fr`, médico `1fr / 1fr`, procedimentos `1.15fr / 1fr`, conversa `.83fr / 1.17fr` e fecho `1.05fr / 1fr`. A assimetria associa texto e evidência visual sem formar uma grade de cartões. A galeria clínica usa três colunas; a biblioteca de vídeos combina player e lista de sete assuntos, com empilhamento abaixo de 800px.
 
-Os breakpoints observados são 1100px, 800px, 700px e 370px. A 700px, as composições principais passam a uma coluna, a galeria vira uma sequência vertical, o menu se torna expansível e o formulário mantém duas opções por linha. A 370px, as opções passam para uma coluna. Fotografias recebem recortes específicos por contexto; não aplicar um `object-position` único a todas.
+Os breakpoints principais são 1100px, 1000px, 800px, 700px e 370px. O menu torna-se expansível a 1000px para manter todos os destinos disponíveis. A 700px, as composições principais passam a uma coluna, a galeria vira uma sequência vertical e o formulário mantém duas opções por linha. A 370px, as opções passam para uma coluna. Fotografias recebem recortes específicos por contexto; não aplicar um `object-position` único a todas.
 
-A ordem narrativa é parte da composição: médico → formação/manifesto → procedimentos → estrutura → jornada → contato → FAQ → recursos → fecho. Extensões devem preservar a progressão de autoridade, compreensão e ação.
+A ordem narrativa é parte da composição: apresentação → credenciais → vídeos → médico/manifesto → procedimentos → estrutura → jornada → contato → FAQ → fecho. Extensões devem preservar a progressão de autoridade, compreensão e ação.
 
 ## Elevation & Depth
 
-O sistema é plano por padrão e não usa sombras em seus contêineres principais. A profundidade vem de alternância tonal, fotografias recortadas, sobreposição da legenda do retrato, bordas de 1px e mudança de posição no hover. O backdrop escuro do diálogo (`#0a1b23d9`) é funcional e exclusivo da visualização ampliada.
+O sistema é plano por padrão e não usa sombras em seus contêineres principais. A profundidade vem de alternância tonal, fotografias recortadas, sobreposição da legenda do retrato, bordas de 1px e mudança de posição no hover. A única sombra é funcional no controle branco sobre a capa de vídeo: `0 5px 18px #00000026`. O backdrop escuro do diálogo (`#152c48e6`) é funcional e exclusivo da visualização ampliada.
 
 **A regra da superfície plana.** Não introduza sombras de cartão para separar conteúdo; use cor de fundo, linha, recorte e espaço.
 
 ## Shapes
 
-A linguagem é essencialmente ortogonal. Botões têm raio sutil de 2px; formulários, cards de apoio, painéis e imagens permanecem quadrados. Círculos aparecem apenas em controles com significado próprio, como rádio e ícone de reprodução. Linhas finas e setas lineares são o motivo geométrico recorrente. O retrato do hero recebe um canto desenhado em dourado, não uma moldura completa.
+A linguagem é essencialmente ortogonal. Botões têm raio sutil de 2px; formulários, cards de apoio, painéis e imagens permanecem quadrados. Círculos aparecem apenas em controles com significado próprio, como rádio e ícone de reprodução. Linhas finas e setas lineares são o motivo geométrico recorrente. O retrato do hero recebe um canto desenhado em azul, não uma moldura completa.
 
 ## Components
 
 ### Buttons
 
 - **Shape:** retângulo quase reto, raio de 2px, altura mínima de 58px.
-- **Primary:** azul profundo com texto creme, padding `16px 24px` e seta linear; pode ocupar a largura do formulário.
-- **Light:** creme com texto azul profundo sobre fundos escuros; no hover recebe areia.
-- **Hover / Focus:** elevação visual de 2px por transformação; mudança tonal em 200ms; foco global de 3px dourado com offset de 5px.
+- **Primary:** azul oficial com texto branco, padding `16px 24px` e seta linear; pode ocupar a largura do formulário.
+- **Light:** branco com texto azul oficial sobre fundos escuros; no hover recebe cinza claro.
+- **Hover / Focus:** elevação visual de 2px por transformação; mudança tonal em 200ms; foco global de 3px azul com offset de 5px.
 
 ### Links de texto
 
 - Linha dourada inferior, seta horizontal e espaçamento amplo entre rótulo e ícone.
-- No hover, o texto assume dourado. Links de conteúdo secundário podem usar sublinhado simples com offset.
+- No hover, o texto assume azul. Links de conteúdo secundário podem usar sublinhado simples com offset.
 
 ### Cards / Containers
 
 - **Corner Style:** reto, sem raio.
-- **Background:** sand para apoio, névoa clínica para infraestrutura e recursos, creme para a base.
+- **Background:** surface para apoio, névoa clínica para infraestrutura e recursos, branco para a base.
 - **Shadow Strategy:** nenhuma sombra.
 - **Border:** linhas de 1px em `line` ou variações locais de contraste equivalente.
 - **Internal Padding:** 25–39px nos principais blocos compactos.
 
 ### Inputs / Fields
 
-- Campo de nome em creme, borda de 1px, raio zero e padding `13px 16px`.
-- Opções de assunto são blocos selecionáveis de no mínimo 60px; estado selecionado troca para azul profundo e creme.
-- O foco das opções usa outline dourado de 3px com offset de 3px. Estados de erro e desabilitado não estão definidos no projeto atual; não os invente silenciosamente.
+- Campo de nome em branco, borda de 1px, raio zero e padding `13px 16px`.
+- Opções de assunto são blocos selecionáveis de no mínimo 60px; estado selecionado troca para azul oficial e branco.
+- O foco das opções usa outline azul de 3px com offset de 3px. Estados de erro e desabilitado não estão definidos no projeto atual; não os invente silenciosamente.
 
 ### Navigation
 
-- Cabeçalho creme com borda inferior, logo oficial à esquerda e links Manrope de 14px à direita.
-- Hover em dourado; CTA de contato recebe linha dourada.
-- Abaixo de 700px, o menu abre em painel creme e o contato vira um bloco azul de alto contraste. `Escape` fecha o menu e devolve foco ao controle.
+- Cabeçalho branco com borda inferior, logo oficial à esquerda e links Manrope de 14px à direita.
+- Hover em azul; CTA de contato recebe linha dourada.
+- Abaixo de 1000px, o menu abre em painel branco e o contato vira um bloco azul de alto contraste. `Escape` fecha o menu e devolve foco ao controle.
 
 ### Hero editorial
 
 - Headline, apresentação profissional, descrição, CTA e CRM/RQE formam o lado textual.
-- O lado visual usa o retrato oficial em recorte vertical de 585px, legenda azul sobreposta e canto dourado.
+- O lado visual usa o retrato oficial em recorte vertical de 585px, legenda azul sobreposta e canto azul.
 - A entrada animada ocorre apenas acima de 700px e quando o usuário não solicita movimento reduzido.
 
 ### Acordeões e galeria
@@ -218,7 +219,7 @@ A linguagem é essencialmente ortogonal. Botões têm raio sutil de 2px; formul�
 
 ### Do:
 
-- **Do** preserve o azul profundo, creme, dourado e areia como eixo da identidade.
+- **Do** preserve os azuis oficiais, branco e cinzas neutros como eixo da identidade.
 - **Do** use Urbanist para títulos e Manrope para texto, controles e metadados.
 - **Do** mantenha CRM-SP 108931 e RQE 69886 próximos ao primeiro CTA e nos pontos de responsabilidade profissional.
 - **Do** use fotos reais, responsivas e com alt text factual; mantenha a proveniência em `docs/SOURCES.md`.
@@ -231,6 +232,14 @@ A linguagem é essencialmente ortogonal. Botões têm raio sutil de 2px; formul�
 - **Don't** introduza promessas de resultado, diagnóstico, indicação de cirurgia, preço, avaliação ou credencial sem fonte verificada.
 - **Don't** use bancos de imagem, retratos gerados ou estética de antes/depois no lugar da documentação oficial.
 - **Don't** transforme a composição em uma coleção de cards arredondados com sombras.
-- **Don't** use dourado como fundo dominante ou decoração abundante.
+- **Don't** reintroduza tons de bege ou dourado de outras marcas.
 - **Don't** publique, envie ou armazene dados do formulário; a ação final continua sob controle da pessoa no WhatsApp.
 - **Don't** trate este documento como molde genérico: ele orienta apenas a manutenção e as extensões do projeto Basile.
+
+## Vídeos oficiais
+
+A biblioteca aparece após as credenciais, com acesso no menu e no hero. Sete miniaturas locais correspondem aos sete vídeos do perfil original; dados completos em `docs/SOURCES.md`. A seleção atual fica azul e possui `aria-current`.
+
+Selecionar um assunto encerra o player anterior, atualiza a capa e leva o foco ao controle de reprodução. O iframe de `youtube-nocookie.com` é criado somente após ação explícita em “Assistir ao vídeo”. Há comando de parar e link permanente para abrir no YouTube. Sem JavaScript, todos os links continuam acessíveis. Reprodução não solicitada e autoavanço não fazem parte do fluxo.
+
+Abaixo de 800px o player precede a lista; até 500px as sete opções ficam em uma coluna, sem carrossel nem itens ocultos. O aviso ao lado do player explica o carregamento externo. O formulário continua sem persistência ou envio pelo site.

@@ -1,0 +1,33 @@
+/* A visible, consent-on-play library of the clinic's own videos. */
+.videos{background:var(--paper);border-bottom:1px solid var(--line)}
+.videos-heading{margin-bottom:36px}
+.video-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:42px;align-items:start}
+.video-screen{position:relative;aspect-ratio:16/9;background:#1b4784;scroll-margin-top:24px}
+.video-cover{display:block;position:relative;width:100%;height:100%;overflow:hidden}
+.video-cover>img{width:100%;height:100%;object-fit:cover;transition:transform .45s var(--ease)}
+.video-cover:hover>img{transform:scale(1.025)}
+.video-cover:focus-visible{outline:3px solid var(--brand);outline-offset:5px}
+.video-play{position:absolute;inset:auto auto 20px 20px;display:flex;align-items:center;gap:12px;min-height:52px;padding:14px 20px;background:var(--paper);color:#1b4784;font-size:14px;font-weight:600;box-shadow:0 5px 18px #00000026}
+.video-play svg{width:22px;height:22px;fill:currentColor;stroke-width:0}
+.video-screen iframe{width:100%;height:100%;border:0;display:block}
+.video-caption{display:flex;align-items:start;justify-content:space-between;gap:24px;padding-top:22px}
+.video-caption h3{font-size:30px;line-height:1.15;margin-top:4px;max-width:24ch;color:var(--brand)}
+.video-category{font-size:12px;color:var(--muted)}
+.video-external{font-size:13px;display:flex;align-items:center;gap:10px;flex-shrink:0;min-height:44px;color:var(--brand);text-decoration:underline;text-underline-offset:5px}
+.video-external .arrow{transform:rotate(-45deg) scale(.7)}
+.video-notice{font-size:12px;color:var(--muted);max-width:65ch;margin-top:18px;line-height:1.7}
+.video-stop{background:none;border:0;color:var(--brand);padding:10px 0;font-size:13px;text-decoration:underline;text-underline-offset:4px;min-height:44px}
+.video-list-label{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:15px;font-weight:600;border-bottom:1px solid var(--line);padding-bottom:15px}
+.video-list-label>span{font-size:12px;font-weight:400;color:var(--muted)}
+.video-list{list-style:none;margin:0;padding:0;display:grid}
+.video-choice{display:grid;grid-template-columns:88px minmax(0,1fr) 18px;align-items:center;gap:14px;padding:10px 12px 10px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.4;min-height:74px;transition:background .2s,color .2s}
+.video-choice>img{width:88px;height:auto;aspect-ratio:16/9;object-fit:cover}
+.video-choice>svg{width:18px;height:18px;color:var(--brand)}
+.video-choice:hover{background:var(--surface);color:var(--brand)}
+.video-choice[aria-current=true]{background:var(--brand);color:var(--paper);border-color:var(--brand)}
+.video-choice[aria-current=true]>svg{color:var(--paper);fill:currentColor;stroke-width:0}
+.video-choice:focus-visible{outline:3px solid #1b4784;outline-offset:3px;position:relative;z-index:1;box-shadow:0 0 0 2px #fff}
+.video-selection-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:1100px){.video-layout{gap:28px;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}.video-choice{grid-template-columns:74px minmax(0,1fr) 18px;gap:12px;font-size:13px;min-height:67px}.video-choice>img{width:74px}.video-caption{flex-direction:column;gap:5px}.video-notice{margin-top:10px}}
+@media(max-width:800px){.video-layout{grid-template-columns:1fr;gap:28px}.video-list{grid-template-columns:1fr 1fr;gap:0 20px}.video-choice{height:100%;min-height:78px}.video-list-label{padding-bottom:12px}.video-caption{flex-direction:row;gap:20px}.video-caption h3{font-size:28px}}
+@media(max-width:500px){.videos-heading{margin-bottom:28px}.video-caption{flex-direction:column;gap:6px;padding-top:18px}.video-list{grid-template-columns:1fr;gap:0}.video-choice{grid-template-columns:94px minmax(0,1fr) 18px;min-height:77px;font-size:14px;gap:16px}.video-choice>img{width:94px}.video-play{inset:auto auto 14px 14px;min-height:46px;padding:10px 15px;font-size:13px}.video-caption h3{font-size:28px}.video-notice{margin-top:9px}.video-external{min-height:36px}}

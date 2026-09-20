@@ -38,6 +38,22 @@ Urbanist e Manrope, fontes abertas do repositório Google Fonts. Arquivos e lice
 
 Páginas de procedimentos: `/procedimentos/aumento-das-mamas`, `/procedimentos/reducao-das-mamas`, `/procedimentos/plastica-do-abdomen`, `/procedimentos/lipoaspiracao-e-lipoescultura`, `/procedimentos/rinoplastia`, `/procedimentos/plastica-das-palpebras`, `/procedimentos/rejuvenescimento-da-face`, sempre no domínio oficial.
 
-Vídeos do perfil original: https://www.youtube.com/watch?v=iNOope86nnM (prótese de mama), https://www.youtube.com/watch?v=qiqSnBGC-Kk (contorno corporal), https://www.youtube.com/watch?v=nVrNg0T22K4 (face). Links externos; não há carregamento de players ou rastreadores de terceiros ao visitar a página.
+Vídeos do perfil original, reconferidos em 20/09/2026:
+
+| Tema | Vídeo oficial | Miniatura local |
+| --- | --- | --- |
+| Prótese de mama | https://www.youtube.com/watch?v=iNOope86nnM | protese-mama.jpg |
+| Contorno corporal | https://www.youtube.com/watch?v=qiqSnBGC-Kk | contorno-corporal.jpg |
+| Cirurgias de face | https://www.youtube.com/watch?v=nVrNg0T22K4 | cirurgias-face.jpg |
+| Recuperação da lipo | https://www.youtube.com/watch?v=ZzLB1xnVmCY | recuperacao-lipo.jpg |
+| Recuperação da abdominoplastia | https://www.youtube.com/watch?v=k16hTNY2DzY | recuperacao-abdominoplastia.jpg |
+| Recuperação da prótese de mama | https://www.youtube.com/watch?v=qfxOQuR73LY | recuperacao-protese.jpg |
+| Recuperação da rinoplastia | https://www.youtube.com/watch?v=mhz9TSfUopU | recuperacao-rinoplastia.jpg |
+
+Miniaturas oficiais baixadas de `https://img.youtube.com/vi/ID/maxresdefault.jpg`, com alternativa `mqdefault.jpg`, e versionadas em `src/assets/videos`. Nenhum player ou recurso de terceiros é carregado na visita inicial. O iframe de `youtube-nocookie.com` só é criado ao reproduzir explicitamente. Links diretos para o YouTube permanecem disponíveis, inclusive sem JavaScript. O widget WhatsApp original não hospeda vídeos; o usuário confirmou que desejava os vídeos do perfil.
+
+## Paleta oficial — revisão de 20/09/2026
+
+CSS e estilos computados: https://www.clinicabasile.com.br/css/css.css e perfil do médico. Títulos `#3E7EC2`, faixa `.bg-blue` `#3971AD`, links `#337AB7`, dropdown `#1B4784`, fundo `#FFFFFF`, seções `#F4F4F4` e formulário `#FAFAFA`. Estes tons substituem completamente os neutros quentes e o dourado da proposta anterior. Texto secundário adaptado a `#626262` para contraste em superfícies claras; tipografia Urbanist/Manrope e composição editorial preservadas.
 
 Política e termos apontam às páginas originais da clínica. O link de mapa usa uma pesquisa explícita pelo nome e endereço confirmado.
